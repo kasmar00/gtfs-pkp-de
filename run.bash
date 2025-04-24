@@ -15,4 +15,4 @@ mv tmp/tmp_routes.txt tmp/routes.txt
 
 cd tmp && zip -r filtered.zip *.txt && cd ..
 
-mv tmp/filtered.zip out/latest.zip
+./gtfsclean tmp/filtered.zip --fix --delete-orphans --output out/latest.zip 
